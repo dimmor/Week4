@@ -1,6 +1,6 @@
 //database connection file
 
-module.exports =
+module.exports = 
 {
-"URI": "mongodb://localhost/book_store"
+    "URI": "mongodb://localhost/book_store"
 }

@@ -6,22 +6,23 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
 //database setup
+// database setup
 let mongoose = require('mongoose');
 let DB = require('./db');
 
-//point mongoose to DB URI
+// point mongoose to the DB URI
 mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 let mongoDB = mongoose.connection;
-mongoDB.on('error', console.error.bind(console, 'Connection error: '));
-mongoDB.once('open', ()=> {
+mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
+mongoDB.once('open', ()=>{
   console.log('Connected to MongoDB...');
 });
 
 //routers setup
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let booksRouter = require('../router/book');
+let booksRouter = require('../routes/book');
 
 let app = express();
 
@@ -38,7 +39,7 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('book-list', booksRouter);
+app.use('/book-list', booksRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
