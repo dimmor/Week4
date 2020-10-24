@@ -1,6 +1,6 @@
 {
   "name": "week4",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -17,5 +17,18 @@
     "mongoose": "^5.10.10",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "\"Week3-part2\"",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimmor/Week4.git"
+  },
+  "author": "Dmitriy Morozov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimmor/Week4/issues"
+  },
+  "homepage": "https://github.com/dimmor/Week4#readme"
 }
