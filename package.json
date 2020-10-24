@@ -19,7 +19,7 @@
     "popper.js": "^1.16.1"
   },
   "description": "\"Week3-part2\"",
-  "main": "index.js",
+  
   "devDependencies": {},
   "repository": {
     "type": "git",
